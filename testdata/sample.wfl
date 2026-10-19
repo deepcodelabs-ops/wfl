@@ -1,0 +1,19 @@
+@@intent v1.0.0 flow:UserAuth
+  # feat: initial auth flow
+
+  client -> gateway: POST /login
+  gateway -> authService: validateCredentials()
+    @context: testdata/ref.go:5
+    @api: internal/auth
+    @db: users.credentials
+  authService -> tokenStore: issueJWT()
+  gateway -> client: 200 + token
+@@end:sha256:78f60cf556b77da34f377e6b230a4f0cd49d244352bbd47d570b61d8f2d9d24b
+
+@@impl v1.0.0 flow:UserAuth
+  # agent-written after implementation
+@@end
+
+@@changelog flow:UserAuth
+  v1.0.0 feat: initial auth flow
+@@end

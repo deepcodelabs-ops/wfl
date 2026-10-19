@@ -1,0 +1,19 @@
+# compiled binary
+wfl
+wfl.exe
+
+# build artifacts
+*.tmp
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.idea/
+*.swp
+*.swo
+
+# local Claude Code settings (personal permissions — not for repo)
+.claude/

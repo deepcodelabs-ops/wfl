@@ -1,0 +1,14 @@
+@@intent v2.0.0 flow:StaleFlow
+  # feat: stale test
+
+  actor -> service: newAction()
+@@end:sha256:361c329375336aff12df54f2c2ea96832bc3775cc64c42a24525ef7f191d11e5
+
+@@impl v1.0.0 flow:StaleFlow
+  # impl notes from before the breaking change
+@@end
+
+@@changelog flow:StaleFlow
+  v2.0.0 feat: breaking change
+  v1.0.0 feat: initial
+@@end

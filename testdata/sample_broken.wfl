@@ -1,0 +1,13 @@
+@@intent v1.0.0 flow:BrokenFlow
+  # feat: tampered hash test
+
+  actor -> service: action()
+@@end:sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+@@impl v1.0.0 flow:BrokenFlow
+  # impl notes
+@@end
+
+@@changelog flow:BrokenFlow
+  v1.0.0 feat: initial
+@@end
